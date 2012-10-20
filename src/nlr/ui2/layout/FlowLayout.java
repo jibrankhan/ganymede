@@ -49,7 +49,7 @@ public strictfp class FlowLayout implements Layout {
 				
 				x = 0f;
 				
-				y += maxY + this.spacingY;
+				y += maxY;
 				
 				maxY = 0f;
 			}
@@ -57,7 +57,7 @@ public strictfp class FlowLayout implements Layout {
 			i.setAbsoluteX(innerX + x);
 			i.setAbsoluteY(innerY + y);
 			
-			x += i.getAbsoluteWidth() + this.spacingX;
+			x += i.getAbsoluteWidth();
 		}
 	}
 }

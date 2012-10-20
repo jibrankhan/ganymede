@@ -24,34 +24,14 @@ public strictfp final class TestGame extends BasicGame {
 		this.screen = new UiScreen(new FlowLayout(4f, 4f), 8f, 8f);
 		
 		for (int i = 0; i < 8; i++) {
-			
+		
 			this.screen.add(
 					new UiPane(
-							new FlowLayout(4f, 4f), 
+							new StaticLayout(), 
 							new Dimension(0f), 
 							new Dimension(0f), 
 							new Dimension(128f), 
-							new Dimension(128f)));
-			
-			if (i == 4) {
-				
-				UiPane pane = new UiPane(
-						new FlowLayout(4f, 4f), 
-						new Dimension(0f), 
-						new Dimension(0f), 
-						new Dimension(260f), 
-						new Dimension(260f));
-				
-				pane.add(
-						new UiPane(
-							new FlowLayout(4f, 4f), 
-							new Dimension(0f), 
-							new Dimension(0f), 
-							new Dimension(16f), 
-							new Dimension(16f)));
-				
-				this.screen.add(pane);
-			}
+							new Dimension(128f + i * 10f)));
 		}
 	}
 	
