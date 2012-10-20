@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
+<map version="1.0" orientation="orthogonal" width="80" height="160" tilewidth="24" tileheight="24" eyeDistance="100.0" viewportWidth="640" viewportHeight="480">
+ <tileset firstgid="1" source="../tiles/Dust.tsx"/>
+ <tileset firstgid="673" source="../tiles/Sand.tsx"/>
+ <layer name="Background" width="80" height="160" viewPlaneDistance="0.0" viewPlaneInfinitelyFarAway="false" tileWidth="24" tileHeight="24">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAAO3YYW6cMBAGULbJJbbJJdrsJdLu/c9TUGNp9GXAvy29J1kbDDbxyNgDt23bfuzlZS+vX3/foi6Pu3P5+9K0q22u+lxJN+5jDD/38raX973c47heN87l71vTrvaX5+rfK8m4jTGM48defu3l914+vo7rWMe5/P1o2o3fvOdrXLeSOg+6cR3lcy9/9vJ3L8/t/1jz2s+TutGunsu59x79r6TOkW5cR+niem/qs31d5+q5nJePbd31r86RblxH6eLSPfPZvq5ztU3O5+e2bvzqPOrGdZQuLjWeo757Xkfbq/m38v5xjKXbO+s+m3HN8Xe5yuhrtK1tsr/Htu7+cYyl2zvrPptxzfF319S+zvLA2sfK+8csX77KX85ylRrjszxw3CvPr+QYZ/7/s/lW4zTq85qr95C67h33ytivpD6/4//P49n8vJU2I475HpJtnuVeGfuV1DU+89wxztn8vJc+zt4Hs82IVcZutfylzrNcq7q8+ey9f1Z/9i6XOeRq8ct8b/Y+chXf7ntA5jHjXrVdzSFXi1/3LenqfWTUdftmvTb35Yxfbfco9avtv923pKv3kbo/ZHy7fK7LvbNd7ukr6cZT16TZ3pt59Cx3/Ny+x3Tl/bcbT32vne29mRPOcsduTc3vPSu5yo27NbDbR6++4Zytn7Uuv/espI69e65mz1p+q8nzZ+tnrcs+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPjuHwkHaMkAyAAA
+  </data>
+ </layer>
+ <layer name="Sand" width="80" height="160" viewPlaneDistance="0.0" viewPlaneInfinitelyFarAway="false" tileWidth="24" tileHeight="24">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAAO3UzU7CQBQGUNMH9TF8HxCRqGjAqMGVuvZvIejjeBtvw0hK3FmL5yRfSuiQdL7eYW8PAKBfhtVXDquun6SfRtHbUeQ+8hZZRlaR98iHXn9UdzeOLCLPkZe83m7pdaXnb6bZ3WXufz8yiM8P1Xo2R7nmMfJU9Fx3fNzS83/qdp7dDYr9192dZaZ5bTvf9bqLXNN0Pc5Om+tkx/8bys7ucs42Z6zs8iSzuW6ea89bZrWZ00nem1fr99Z3V7GH68hNzs/pxp5mLef2dcvem7XNvYPi+7bf1TM/zPdXzmeflGd08cszMSvmtpzZPinnqqvzNNuRs9y1ZdcPAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAn/MJP+3kUQDIAAA=
+  </data>
+ </layer>
+ <layer name="Cliff 2" width="33" height="9" viewPlaneDistance="0.0" viewPlaneInfinitelyFarAway="false" x="-1" y="13" tileWidth="24" tileHeight="24">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAAOXR6Q2CQBCG4aU0LUFFBbUBvK8KVDx70QY8/mkDHuX4brKbTIggxsgfv+QJhJ1hNrtKxWePQ8K6zhW3NzXfRP7/8WK9hjoKKKIEF2VUUIUHX9Q2PtyD7Wujgy566GOAIUYI0EQrRe04MsOe8xEn8X2LneibIcQcCyyxwhob0zPBNGWtjT7ju3nXT3nWZ1xi+n4VPV/eWc5RKu9kNNwkemce8/2M95B0Z/+SJ7Qo2sqkBAAA
+  </data>
+ </layer>
+ <layer name="Cliff 1" width="37" height="10" viewPlaneDistance="0.0" viewPlaneInfinitelyFarAway="false" x="-1" tileWidth="24" tileHeight="24">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAAO3RRwoCQRCF4dqac9ias+PWnMOpRy8hehx/F0OLtNAFwiD44NtMP4aiSuSfX04BRZRQDnmWIAMM4WEU8ixB9jjgiNPbWwRRxBBHAkmkkEYGWeSQF7Nzbd92Ix9ny7wVVFFDHQ000UIbHXTRQ1/MzrV9zY3GmGCKGeZYYIkV1thgi52YnWv7thtp8mmnr3m+Xxz+dXXsfSM33B16vuXbA5TAGmPIBQAA
+  </data>
+ </layer>
+</map>
