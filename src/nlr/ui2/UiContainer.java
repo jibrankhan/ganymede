@@ -1,6 +1,6 @@
 package nlr.ui2;
 
-import java.util.Set;
+import java.util.List;
 
 public strictfp interface UiContainer extends UiEntity {
 	
@@ -12,7 +12,7 @@ public strictfp interface UiContainer extends UiEntity {
 	
 	float getInnerHeight();
 	
-	Set<UiComponent> getComponents();
+	List<UiComponent> getComponents();
 	
 	void add(UiComponent component);
 	

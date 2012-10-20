@@ -40,24 +40,57 @@ public strictfp class FlowLayout implements Layout {
 			i.setAbsoluteWidth(i.getWidth().get(innerWidth));
 			i.setAbsoluteHeight(i.getHeight().get(innerHeight));
 			
+			if (i.getAbsoluteWidth() > innerWidth) {
+				
+				if (x == 0f) {
+					
+					i.setAbsoluteX(innerX + x);
+					i.setAbsoluteY(innerY + y);
+					
+					maxY = 0f;
+				}
+				else {
+					
+					x = 0f;
+					
+					y += maxY + this.spacingY;
+					
+					maxY = 0f;
+					
+					i.setAbsoluteX(innerX + x);
+					i.setAbsoluteY(innerY + y);
+				}
+			}
+			else {
+				
+				if (x + i.getAbsoluteWidth() > innerWidth) {
+					
+					x = 0f;
+					
+					y += maxY + this.spacingY;
+					
+					maxY = 0f;
+				}
+				
+				i.setAbsoluteX(innerX + x);
+				i.setAbsoluteY(innerY + y);
+			}
+			
+			x += i.getAbsoluteWidth() + this.spacingX;
+			
 			if (i.getAbsoluteHeight() > maxY) {
 				
 				maxY = i.getAbsoluteHeight();
 			}
 			
-			if (x + i.getAbsoluteWidth() > innerWidth) {
+			if (x > innerWidth) {
 				
 				x = 0f;
 				
-				y += maxY;
+				y += maxY + this.spacingY;
 				
 				maxY = 0f;
 			}
-			
-			i.setAbsoluteX(innerX + x);
-			i.setAbsoluteY(innerY + y);
-			
-			x += i.getAbsoluteWidth();
 		}
 	}
 }

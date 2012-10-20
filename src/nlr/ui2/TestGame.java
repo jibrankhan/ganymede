@@ -25,13 +25,46 @@ public strictfp final class TestGame extends BasicGame {
 		
 		for (int i = 0; i < 8; i++) {
 		
-			this.screen.add(
-					new UiPane(
-							new StaticLayout(), 
-							new Dimension(0f), 
-							new Dimension(0f), 
-							new Dimension(128f), 
-							new Dimension(128f + i * 10f)));
+			if (i == 3) {
+				
+				this.screen.add(
+						new UiPane(
+								new StaticLayout(), 
+								new Dimension(0f), 
+								new Dimension(0f), 
+								new Dimension(640f), 
+								new Dimension(4f)));
+			}
+			else if (i == 4) {
+				
+				this.screen.add(
+						new UiPane(
+								new StaticLayout(), 
+								new Dimension(0f), 
+								new Dimension(0f), 
+								new Dimension(640f), 
+								new Dimension(16f)));
+			}
+			else if (i == 6) {
+				
+				this.screen.add(
+						new UiPane(
+								new StaticLayout(), 
+								new Dimension(0f), 
+								new Dimension(0f), 
+								new Dimension(640f), 
+								new Dimension(32f)));
+			}
+			else {
+				
+				this.screen.add(
+						new UiPane(
+								new StaticLayout(), 
+								new Dimension(0f), 
+								new Dimension(0f), 
+								new Dimension(128f), 
+								new Dimension(128f + i * 10f)));
+			}
 		}
 	}
 	

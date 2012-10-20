@@ -1,7 +1,8 @@
 package nlr.ui2;
 
+import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.Set;
+import java.util.List;
 
 import nlr.ui2.layout.Layout;
 
@@ -12,14 +13,14 @@ public strictfp abstract class AbstractUiContainer implements UiContainer {
 
 	private Layout layout;
 	
-	private Set<UiComponent> components;
+	private List<UiComponent> components;
 	
 	private boolean isValidated;
 	
 	@Override
-	public Set<UiComponent> getComponents() {
+	public List<UiComponent> getComponents() {
 		
-		return new HashSet<UiComponent>(this.components);
+		return this.components; 
 	}
 	
 	public AbstractUiContainer(Layout layout) {
@@ -28,7 +29,7 @@ public strictfp abstract class AbstractUiContainer implements UiContainer {
 		
 		this.layout = layout;
 		
-		this.components = new HashSet<UiComponent>();
+		this.components = new ArrayList<UiComponent>();
 		
 		this.isValidated = false;
 	}
